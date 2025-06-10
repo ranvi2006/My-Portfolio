@@ -1,0 +1,92 @@
+.certificate-section {
+  background: #0b0b0b;
+  color: white;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.certificate-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-content {
+  flex: 1 1 300px;
+  padding-right: 20px;
+}
+
+.cert-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.cert-content p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #ccc;
+}
+
+.cert-content span {
+  font-weight: bold;
+  color: #eee;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-view:hover {
+  background: #ddd;
+}
+
+.cert-image {
+  flex: 1 1 150px;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}

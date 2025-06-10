@@ -1,0 +1,60 @@
+.profile-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to right, #1f2937, #111827);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap; /* ensure wrap for small screens */
+}
+
+.profile-section {
+  flex: 1;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  min-width: 250px;
+}
+
+.profile-section.middle {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-section.quote {
+  text-align: right;
+  font-style: italic;
+}
+
+.profile-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile-section a:hover {
+  text-decoration: underline;
+}
+
+/* 🔁 Responsive Styles */
+@media (max-width: 768px) {
+  .profile-banner {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-section {
+    padding: 10px 0;
+    border: none !important;
+  }
+
+  .profile-section.quote {
+    text-align: center;
+    margin-top: 10px;
+  }
+}

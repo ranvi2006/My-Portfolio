@@ -1,0 +1,106 @@
+.contact-section {
+  background: #0f0f0f;
+  padding: 60px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-image {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px #ffffff33;
+}
+
+.contact-info {
+  flex: 2 1 400px;
+  padding-left: 30px;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.contact-info h4 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.availability {
+  color: #3cff3c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.contact-details a {
+  color: #7ab5ff;
+  text-decoration: none;
+  margin-right: 8px;
+  transition: color 0.3s;
+}
+
+.contact-details a:hover {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-info {
+    padding-left: 0;
+  }
+
+  .contact-image img {
+    width: 140px;
+    height: 140px;
+    /* background-color: aliceblue; */
+  }
+}
