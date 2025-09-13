@@ -104,7 +104,7 @@ const Contact = () => {
               <strong>🔗 Links:</strong><br />
               {profile.linkedinLink && <a href={profile.linkedinLinks} target="_blank">LinkedIn</a>}{" | "}
               {profile.githubLink && <a href={profile.githubLink} target="_blank">GitHub</a>}{" | "}
-              {profile.githubLink && <a href={profile.youtubeLink} target="_blank">Youtube</a>}{"  "}
+              {profile.youtubeLinks && <a href={profile.youtubeLinks} target="_blank">Youtube</a>}{"  "}
               {profile.protfolioLink && <a href={profile.protfolioLink} target="_blank">Portfolio</a>}{" | "}
               {profile.resumeLink && <a href={profile.resumeLink} target="_blank">Resume</a>}
             </p>
