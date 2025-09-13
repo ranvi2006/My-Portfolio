@@ -3,19 +3,41 @@ import "./Skill.css";
 import axios from "axios";
 
 const Skill = () => {
-  const [skills, setSkills] = useState([]);
+  const [skills, setSkills] = useState({
+  technicalSkills: [
+    "Java",
+    "JavaScript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "SQL",
+    "Git",
+    "HTML",
+    "CSS",
+  ],
+  softSkills: [
+    "Problem-solving",
+    "Communication",
+    "Teamwork",
+    "Time management",
+    "Learning ability",
+    "Self-motivation",
+  ],
+});
+
 
   useEffect(() => {
     const getSkill = async () => {
-      try {
-        const url = import.meta.env.VITE_MONGO_URL + "/getProfile";
-        const res = await axios.get(url);
-        if (res.data.success && res.data.data.skills) {
-          setSkills(res.data.data.skills);
-        }
-      } catch (err) {
-        console.error("Error fetching skills:", err);
-      }
+      // try {
+      //   const url = import.meta.env.VITE_MONGO_URL + "/getProfile";
+      //   const res = await axios.get(url);
+      //   if (res.data.success && res.data.data.skills) {
+      //     setSkills(res.data.data.skills);
+      //   }
+      // } catch (err) {
+      //   console.error("Error fetching skills:", err);
+      // }
     };
 
     getSkill();
