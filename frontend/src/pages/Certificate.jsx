@@ -3,19 +3,54 @@ import "./Certificate.css";
 import axios from "axios";
 
 const Certificate = () => {
-  const [certificates, setCertificates] = useState([]);
+  const [certificates, setCertificates] = useState([
+  {
+    _id: "6843e0fb739d10b4513d445d",
+    id: "671639f4cb95d98429043936",
+    title: "Certificate of Completion",
+    issuer: "Apna College LPU",
+    issued: "Feb 2025",
+    image: "/media/devlopment.png",
+    skills: ["SQL", "CSS", "HTML", "JavaScript", "MERN Stack"],
+  },
+  {
+    _id: "6843e0fb739d10b4513d445e",
+    id: "66ed440ba1f3c362ad0580d6",
+    title: "CERTIFICATE OF COMPLETION",
+    issuer: "Apna College",
+    issued: "Sep 2024",
+    image: "/media/java.png",
+    skills: ["Java", "Data Structures & Algorithms (DSA)"],
+  },
+  {
+    _id: "6843e0fb739d10b4513d445f",
+    id: "66456ef270580a95de8e2294",
+    title: "Web Development - Learn to Build Real-Time Website Like Twitter",
+    issuer: "NullClass",
+    issued: "May 2024",
+    image: "/media/null.png",
+    skills: [
+      "Real-Time Web Development",
+      "API Development",
+      "Performance Optimization",
+      "WebSockets / Socket.io",
+      "Authentication & Security (JWT, OAuth)",
+    ],
+  },
+]);
+ 
 
   useEffect(() => {
     async function getCertificates() {
-      try {
-        const url = import.meta.env.VITE_MONGO_URL + "/getCertificates";
-        const res = await axios.get(url);
-        if (res.data.success) {
-          setCertificates(res.data.data);
-        }
-      } catch (error) {
-        console.error("Error fetching certificates:", error);
-      }
+      // try {
+      //   const url = import.meta.env.VITE_MONGO_URL + "/getCertificates";
+      //   const res = await axios.get(url);
+      //   if (res.data.success) {
+      //     setCertificates(res.data.data);
+      //   }
+      // } catch (error) {
+      //   console.error("Error fetching certificates:", error);
+      // }
     }
 
     getCertificates();
