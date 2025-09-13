@@ -91,23 +91,7 @@ const Contact = () => {
           )}
 
           <div className="contact-details">
-            {profile.location?.country && (
-              <p><strong>📍 Location:</strong> {profile.location.country}</p>
-            )}
-            {profile.emails?.length > 0 && (
-              <p><strong>📧 Email:</strong> {profile.emails.join(", ")}</p>
-            )}
-            {profile.phoneNumbers?.length > 0 && (
-              <p><strong>📞 Phone:</strong> {profile.phoneNumbers.join(", ")}</p>
-            )}
-            <p>
-              <strong>🔗 Links:</strong><br />
-              {profile.linkedinLink && <a href={profile.linkedinLinks} target="_blank">LinkedIn</a>}{" | "}
-              {profile.githubLink && <a href={profile.githubLink} target="_blank">GitHub</a>}{" | "}
-              {profile.youtubeLinks && <a href={profile.youtubeLinks} target="_blank">Youtube</a>}{"  "}
-              {profile.protfolioLink && <a href={profile.protfolioLink} target="_blank">Portfolio</a>}{" | "}
-              {profile.resumeLink && <a href={profile.resumeLink} target="_blank">Resume</a>}
-            </p>
+           <a href={profile.linkedinLink}>LinkedIn</a>  || <a href={profile.githubLink}> GitHub</a> || <a href={profile.linkedinLink}>LinkedIn</a> || <a href={profile.youtubeLinks}>Youtube</a>
           </div>
         </div>
       </div>
