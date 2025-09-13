@@ -17,6 +17,8 @@ const Contact = () => {
     phoneNumbers: ["6204556962", "6203657421"],
     githubLink: "https://github.com/ranvi2006",
     linkedinLink: "https://www.linkedin.com/in/raju-fullstack/",
+    youtubeLink:"https://www.youtube.com/@wemakecorder"
+    ,
     facebookLink: "",
     instagramLink: "",
     protfolioLink: "",
@@ -102,6 +104,7 @@ const Contact = () => {
               <strong>🔗 Links:</strong><br />
               {profile.linkedinLink && <a href={profile.linkedinLink} target="_blank">LinkedIn</a>}{" | "}
               {profile.githubLink && <a href={profile.githubLink} target="_blank">GitHub</a>}{" | "}
+              {profile.githubLink && <a href={profile.youtubeLink} target="_blank">Youtube</a>}{"  "}
               {profile.protfolioLink && <a href={profile.protfolioLink} target="_blank">Portfolio</a>}{" | "}
               {profile.resumeLink && <a href={profile.resumeLink} target="_blank">Resume</a>}
             </p>
