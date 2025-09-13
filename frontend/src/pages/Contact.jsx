@@ -10,7 +10,7 @@ const Contact = () => {
     professions: "Web Developer | Java & MERN Stack",
     doingJob: false,
     emails: ["rajurk2002@gmail.com", "rajurk2003@gmail.com"],
-    phoneNumbers: ["6204556962", "6203657421"],
+    phoneNumbers: ["6204556962", ],
     githubLink: "https://github.com/ranvi2006",
     linkedinLink: "https://www.linkedin.com/in/raju-fullstack/",
     youtubeLinks: "https://www.youtube.com/@wemakecorder",
